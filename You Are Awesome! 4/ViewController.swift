@@ -9,27 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var inspirationLabel: UILabel!
     
-    @IBOutlet weak var messageLabel1: UILabel!
-    @IBOutlet weak var messageLabel2: UILabel!
-    
-    // Code below executes when the app's view first loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view.
     }
-
-
-    @IBAction func showMessagedPressed(_ sender: UIButton) {
-        messageLabel1.text = "you are awesome!"
-        messageLabel1.textColor = UIColor.purple
-       
+    @IBAction func messagePressed(_ sender: UIButton) {
+        if inspirationLabel.text == "you are awesome!" {
+            inspirationLabel.text = "you are great!"
+        } else if inspirationLabel.text == "you are great!" {
+            inspirationLabel.text = "you are amazing!" 
+            } else {
+                inspirationLabel.text = "you are awesome!"
+            }
     }
-    @IBAction func showAnotherMessagePressed(_ sender: UIButton) {
-        messageLabel2.text = "you are great!"
-        messageLabel2.textColor = UIColor.blue
-    }
-    
     
 }
 
