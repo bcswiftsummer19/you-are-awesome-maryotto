@@ -18,26 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-LP-VbQ">
-                                <rect key="frame" x="130" y="152" width="116" height="39"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image43" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-SF-QjK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dz-m9-4Lj">
+                                <rect key="frame" x="16" y="44" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bSr-Ua-Liv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="0.92003184559999995" green="0.34039638799999999" blue="0.6245778099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="dPp-ZA-a4F">
+                                <rect key="frame" x="16" y="199" width="343" height="550"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-LP-VbQ">
+                                <rect key="frame" x="100" y="152" width="175" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="0O8-wT-hON"/>
+                                    <constraint firstAttribute="height" constant="39" id="ayq-ws-Dpu"/>
+                                    <constraint firstAttribute="width" constant="175" id="rRC-Zc-tLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
                                 <state key="normal" title="show message">
                                     <color key="titleColor" red="0.92003184559999995" green="0.34039638799999999" blue="0.6245778099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.92003184559999995" green="0.34039638799999999" blue="0.6245778099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="messagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2i-df-E3j"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dz-m9-4Lj">
-                                <rect key="frame" x="16" y="44" width="343" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
-                                <color key="textColor" red="0.92003184559999995" green="0.34039638799999999" blue="0.6245778099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPp-ZA-a4F" secondAttribute="bottom" constant="29" id="0rA-Kg-wMf"/>
+                            <constraint firstItem="dPp-ZA-a4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Ck-xV-MTV"/>
+                            <constraint firstItem="dPp-ZA-a4F" firstAttribute="top" secondItem="4hs-LP-VbQ" secondAttribute="bottom" constant="8" id="G9W-ea-pPA"/>
+                            <constraint firstItem="4Dz-m9-4Lj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jji-rw-3A7"/>
+                            <constraint firstItem="4Dz-m9-4Lj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lhm-xC-YUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Dz-m9-4Lj" secondAttribute="trailing" constant="16" id="lma-TA-h3I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPp-ZA-a4F" secondAttribute="trailing" constant="16" id="o7r-qT-NNX"/>
+                            <constraint firstItem="4hs-LP-VbQ" firstAttribute="top" secondItem="4Dz-m9-4Lj" secondAttribute="bottom" constant="8" id="s5g-jm-xCo"/>
+                            <constraint firstItem="4hs-LP-VbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tGM-mm-eem"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -46,7 +71,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="116.00985221674877"/>
+            <point key="canvasLocation" x="135.19999999999999" y="115.27093596059113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image0" width="489" height="868"/>
+        <image name="image43" width="494" height="868"/>
+    </resources>
 </document>
