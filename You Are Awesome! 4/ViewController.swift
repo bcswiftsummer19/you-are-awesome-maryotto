@@ -26,13 +26,15 @@ class ViewController: UIViewController {
                         "you brighten my day!",
                         "you make me smile!"]
         
-        inspirationLabel.text = messages[index]
-        if index == messages.count - 1 {
-            index = 0
-        } else {
-        index = index + 1
-        }
+         inspirationLabel.text = messages.randomElement()! 
         
+//        inspirationLabel.text = messages[index]
+//        if index == messages.count - 1 {
+//            index = 0
+//        } else {
+//        index = index + 1
+//        }
+//
 //        let message1 = "you are awesome!"
 //        let message2 = "you are great!"
 //        let message3 = "you are amazing!"
