@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var inspirationLabel: UILabel!
-    var index = 0
+    var index = -1
+    var imageIndex = -1
+    let numberOfImages = 42
+    @IBOutlet weak var inspirationImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,26 +37,13 @@ class ViewController: UIViewController {
         index = newIndex
         inspirationLabel.text = messages[index]
         
-//         inspirationLabel.text = messages.randomElement()! 
+        repeat {
+            newIndex = Int.random(in: 0..<numberOfImages)
+        } while imageIndex == newIndex
         
-//        inspirationLabel.text = messages[index]
-//        if index == messages.count - 1 {
-//            index = 0
-//        } else {
-//        index = index + 1
-//        }
-//
-//        let message1 = "you are awesome!"
-//        let message2 = "you are great!"
-//        let message3 = "you are amazing!"
-//        if inspirationLabel.text == message1 {
-//            inspirationLabel.text = message2
-//        } else if inspirationLabel.text == message2 {
-//            inspirationLabel.text = message3
-//            } else {
-//                inspirationLabel.text = message1
-//            }
+        imageIndex = newIndex
+        inspirationImage.image = UIImage(named: "image\(imageIndex)")
+        
     }
-    
 }
 
