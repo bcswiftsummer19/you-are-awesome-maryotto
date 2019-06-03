@@ -25,8 +25,15 @@ class ViewController: UIViewController {
                         "when the genius bar needs help, they call you",
                         "you brighten my day!",
                         "you make me smile!"]
+        var newIndex = -1
+        repeat {
+            newIndex = Int.random(in: 0..<messages.count)
+        } while index == newIndex
         
-         inspirationLabel.text = messages.randomElement()! 
+        index = newIndex
+        inspirationLabel.text = messages[index]
+        
+//         inspirationLabel.text = messages.randomElement()! 
         
 //        inspirationLabel.text = messages[index]
 //        if index == messages.count - 1 {
