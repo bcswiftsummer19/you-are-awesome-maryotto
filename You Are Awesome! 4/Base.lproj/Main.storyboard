@@ -18,16 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image43" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-SF-QjK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image43" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-SF-QjK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dz-m9-4Lj">
                                 <rect key="frame" x="16" y="44" width="343" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="bSr-Ua-Liv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="25"/>
                                 <color key="textColor" red="0.92003184559999995" green="0.34039638799999999" blue="0.6245778099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,13 +57,17 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPp-ZA-a4F" secondAttribute="bottom" constant="29" id="0rA-Kg-wMf"/>
                             <constraint firstItem="dPp-ZA-a4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Ck-xV-MTV"/>
+                            <constraint firstAttribute="bottom" secondItem="mJS-SF-QjK" secondAttribute="bottom" id="9Z7-jX-Qtk"/>
                             <constraint firstItem="dPp-ZA-a4F" firstAttribute="top" secondItem="4hs-LP-VbQ" secondAttribute="bottom" constant="8" id="G9W-ea-pPA"/>
+                            <constraint firstItem="mJS-SF-QjK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iQ8-uN-g73"/>
                             <constraint firstItem="4Dz-m9-4Lj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jji-rw-3A7"/>
                             <constraint firstItem="4Dz-m9-4Lj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lhm-xC-YUH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Dz-m9-4Lj" secondAttribute="trailing" constant="16" id="lma-TA-h3I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPp-ZA-a4F" secondAttribute="trailing" constant="16" id="o7r-qT-NNX"/>
                             <constraint firstItem="4hs-LP-VbQ" firstAttribute="top" secondItem="4Dz-m9-4Lj" secondAttribute="bottom" constant="8" id="s5g-jm-xCo"/>
+                            <constraint firstItem="mJS-SF-QjK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sHT-87-WXV"/>
                             <constraint firstItem="4hs-LP-VbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tGM-mm-eem"/>
+                            <constraint firstItem="mJS-SF-QjK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y6u-w2-Du8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
