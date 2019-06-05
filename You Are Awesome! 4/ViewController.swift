@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var imageIndex = -1
     var soundIndex = -1
     let numberOfImages = 42
-    let numberOfSounds = 6
+    let numberOfSounds = 5
     var awesomePlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
