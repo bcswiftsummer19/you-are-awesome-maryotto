@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var soundSwitch: UISwitch!
     var index = -1
     var imageIndex = -1
-    var soundIndex = -1
+    var soundIndex = 0
     let numberOfImages = 42
     let numberOfSounds = 5
     var awesomePlayer = AVAudioPlayer()
